@@ -1,0 +1,607 @@
+/***IMPORT****/
+/* line 43, E:/code/Yurik/css/_grid.scss */
+body {
+  width: 100%;
+  *zoom: 1; }
+  /* line 29, E:/code/Yurik/css/_grid.scss */
+  body:before,
+  body:after {
+    content: "";
+    display: table; }
+  /* line 33, E:/code/Yurik/css/_grid.scss */
+  body:after {
+    clear: both; }
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, E:/code/Yurik/css/_normalize.scss */
+html {
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  width: 100%;
+  height: 100%; }
+
+/**
+ * Remove default margin.
+ */
+/* line 20, E:/code/Yurik/css/_normalize.scss */
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-size: 100%; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 49, E:/code/Yurik/css/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 61, E:/code/Yurik/css/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 71, E:/code/Yurik/css/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 82, E:/code/Yurik/css/_normalize.scss */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 93, E:/code/Yurik/css/_normalize.scss */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 102, E:/code/Yurik/css/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 113, E:/code/Yurik/css/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 122, E:/code/Yurik/css/_normalize.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 130, E:/code/Yurik/css/_normalize.scss */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 139, E:/code/Yurik/css/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 148, E:/code/Yurik/css/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 157, E:/code/Yurik/css/_normalize.scss */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 166, E:/code/Yurik/css/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 173, E:/code/Yurik/css/_normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 177, E:/code/Yurik/css/_normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 188, E:/code/Yurik/css/_normalize.scss */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 196, E:/code/Yurik/css/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 207, E:/code/Yurik/css/_normalize.scss */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 215, E:/code/Yurik/css/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 225, E:/code/Yurik/css/_normalize.scss */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 236, E:/code/Yurik/css/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 260, E:/code/Yurik/css/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 270, E:/code/Yurik/css/_normalize.scss */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 282, E:/code/Yurik/css/_normalize.scss */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 297, E:/code/Yurik/css/_normalize.scss */
+button,
+html input[type="button"], input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 307, E:/code/Yurik/css/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 316, E:/code/Yurik/css/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 326, E:/code/Yurik/css/_normalize.scss */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 339, E:/code/Yurik/css/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 351, E:/code/Yurik/css/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 361, E:/code/Yurik/css/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 375, E:/code/Yurik/css/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 383, E:/code/Yurik/css/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 394, E:/code/Yurik/css/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 403, E:/code/Yurik/css/_normalize.scss */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 412, E:/code/Yurik/css/_normalize.scss */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 423, E:/code/Yurik/css/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 429, E:/code/Yurik/css/_normalize.scss */
+td,
+th {
+  padding: 0; }
+
+/***IMPORT****/
+/***snippets***/
+/* line 6, E:/code/Yurik/css/main.scss */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/***snippets***/
+/***TAGS***/
+/* line 13, E:/code/Yurik/css/main.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+/* line 18, E:/code/Yurik/css/main.scss */
+body {
+  padding: 0;
+  font-family: Arial; }
+
+/* line 22, E:/code/Yurik/css/main.scss */
+html {
+  padding: 0; }
+
+/* line 25, E:/code/Yurik/css/main.scss */
+a {
+  text-decoration: none; }
+
+/***TAGS***/
+/* line 29, E:/code/Yurik/css/main.scss */
+.header {
+  width: 100%;
+  height: 700px;
+  background: url(../img/header_background.png) no-repeat center center;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+/* line 39, E:/code/Yurik/css/main.scss */
+.header_container {
+  width: 931px;
+  margin: 0 auto; }
+
+/* line 44, E:/code/Yurik/css/main.scss */
+.header__logo {
+  width: 79px;
+  height: 28px;
+  float: left;
+  margin-top: 44px;
+  background: url(../img/Logo-Treehouse.png); }
+
+/* line 51, E:/code/Yurik/css/main.scss */
+.header__menu {
+  float: right;
+  margin-top: 54px; }
+  /* line 54, E:/code/Yurik/css/main.scss */
+  .header__menu a {
+    margin-right: 40px;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase; }
+    /* line 59, E:/code/Yurik/css/main.scss */
+    .header__menu a:last-of-type {
+      margin-right: 0; }
+    /* line 62, E:/code/Yurik/css/main.scss */
+    .header__menu a:hover {
+      color: #ffd700; }
+
+/* line 67, E:/code/Yurik/css/main.scss */
+.header_txt {
+  margin-top: 278px;
+  font-weight: 400;
+  font-family: Arial;
+  text-align: center;
+  color: #fff; }
+  /* line 73, E:/code/Yurik/css/main.scss */
+  .header_txt p {
+    font-size: 40px; }
+  /* line 76, E:/code/Yurik/css/main.scss */
+  .header_txt p:last-of-type {
+    font-size: 75px;
+    text-transform: uppercase; }
+
+/* line 81, E:/code/Yurik/css/main.scss */
+.header_button {
+  padding: 23px 30px;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #fed136; }
+
+/***header--END***/
+/* line 91, E:/code/Yurik/css/main.scss */
+.row-container {
+  width: 931px;
+  margin: 0 auto;
+  text-align: center; }
+  /* line 95, E:/code/Yurik/css/main.scss */
+  .row-container h2 {
+    text-transform: uppercase;
+    font-size: 40px; }
+  /* line 99, E:/code/Yurik/css/main.scss */
+  .row-container p {
+    color: #777;
+    font-size: 16px;
+    line-height: 24px; }
+
+/* line 105, E:/code/Yurik/css/main.scss */
+.row2_item_1 {
+  width: 275px;
+  margin-top: 80px;
+  float: left; }
+
+/* line 110, E:/code/Yurik/css/main.scss */
+.row2_item_2 {
+  width: 275px;
+  margin: 80px 0 0 60px;
+  float: left; }
+
+/* line 115, E:/code/Yurik/css/main.scss */
+.row2_item_3 {
+  width: 275px;
+  margin-top: 80px;
+  float: right; }
+
+/***row_2--END***/
+/* line 121, E:/code/Yurik/css/main.scss */
+.row_3 {
+  width: 100%;
+  padding-top: 120px;
+  text-align: center;
+  background-color: #f7f7f7; }
+  /* line 126, E:/code/Yurik/css/main.scss */
+  .row_3 h2 {
+    font: 700 40px/75px Arial;
+    text-transform: uppercase; }
+  /* line 130, E:/code/Yurik/css/main.scss */
+  .row_3 p {
+    color: #777;
+    margin-bottom: 75px; }
+
+/* line 135, E:/code/Yurik/css/main.scss */
+.row_3__column {
+  display: inline-block;
+  /*inline*/
+  width: 291px;
+  margin: 0 7.5px;
+  min-width: 290px;
+  margin-bottom: 50px; }
+
+/* line 140, E:/code/Yurik/css/main.scss */
+.row_3__column_txt {
+  height: 93px;
+  margin-top: -5px;
+  padding-top: 50px;
+  background: #fff; }
+  /* line 145, E:/code/Yurik/css/main.scss */
+  .row_3__column_txt h4 {
+    font: 700 18px Arial;
+    margin: 0; }
+  /* line 149, E:/code/Yurik/css/main.scss */
+  .row_3__column_txt span {
+    color: #737373;
+    font: 400 14px "Times New Roman"; }
+
+/* line 154, E:/code/Yurik/css/main.scss */
+.row_4_txt {
+  width: 290px;
+  float: left;
+  text-align: right;
+  line-height: 28px; }
+  /* line 159, E:/code/Yurik/css/main.scss */
+  .row_4_txt h4 {
+    text-transform: uppercase;
+    font: 700 18px Arial;
+    margin-bottom: 0; }
+  /* line 164, E:/code/Yurik/css/main.scss */
+  .row_4_txt span {
+    font: 700 18px Arial;
+    line-height: 28px; }
+  /* line 168, E:/code/Yurik/css/main.scss */
+  .row_4_txt p {
+    color: #777;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    font-family: 'Times New Roman', sans-serif; }
+
+/*# sourceMappingURL=main.css.map */
